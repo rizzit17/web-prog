@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Who's Your Favorite Footballer?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 70%;
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea,
+        select,
+        input[list] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <h1>Who's Your Favorite Footballer?</h1>
+    <form action="/submit" method="POST">
+        <label for="textbox">Tell us his name:</label>
+        <input type="text" id="textbox" name="textbox" placeholder="Enter his name" required><br>
+
+        <fieldset>
+            <legend>Which country does he belong to?</legend>
+            <label><input type="radio" name="radio" value="Argentina" required> Argentina</label><br>
+            <label><input type="radio" name="radio" value="Portugal"> Portugal</label><br>
+            <label><input type="radio" name="radio" value="Brazil"> Brazil</label><br>
+            <label><input type="radio" name="radio" value="Spain"> Spain</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Been a part of what all clubs?</legend>
+            <label><input type="checkbox" name="checkbox1" value="Real Madrid"> Real Madrid</label><br>
+            <label><input type="checkbox" name="checkbox2" value="FC Barcelona"> FC Barcelona</label><br>
+            <label><input type="checkbox" name="checkbox3" value="Manchester City"> Manchester City</label><br>
+            <label><input type="checkbox" name="checkbox4" value="Manchester United"> Manchester United</label><br>
+            <label><input type="checkbox" name="checkbox5" value="Paris Saint Germain"> Paris Saint Germain</label><br>
+            <label><input type="checkbox" name="checkbox6" value="Juventus"> Juventus</label>
+        </fieldset>
+
+        <label for="selection-box">Current club?</label><br>
+        <select id="selection-box" name="selection-box" size="3">
+            <option value="Real Madrid">Real Madrid</option>
+            <option value="FC Barcelona">FC Barcelona</option>
+            <option value="Manchester City">Manchester City</option>
+            <option value="Manchester United">Manchester United</option>
+            <option value="Juventus">Juventus</option>
+            <option value="Paris Saint Germain">Paris Saint Germain</option>
+            <option value="FC Bayern">FC Bayern</option>
+            <option value="Al Nassr">Al Nassr</option>
+            <option value="Inter Miami">Inter Miami</option>
+        </select><br><br>
+
+        <label for="option-box">His playing position?</label><br>
+        <select id="option-box" name="option-box">
+            <option value="Goalkeeper">Goalkeeper</option>
+            <option value="Defender">Defender</option>
+            <option value="Midfielder">Midfielder</option>
+            <option value="Striker">Striker</option>
+        </select><br><br>
+
+        <label for="textarea">Write something that you like about him:</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea><br><br>
+
+        <label for="datalist">His favorite brand:</label>
+        <input list="options" id="datalist" name="datalist">
+        <datalist id="options">
+            <option value="Adidas">
+            <option value="Nike">
+            <option value="Puma">
+        </datalist><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

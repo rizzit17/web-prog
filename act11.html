@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables and Hyperlinks</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: white;
+                color: black;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 24px;
+                margin-top: 20px;
+            }
+
+            .container {
+                margin: 0 auto;
+                width: 80%;
+                padding: 20px;
+            }
+
+            table {
+                width: 100%;
+                height: auto;
+                border-collapse: collapse;
+                margin-top: 20px;
+                border: 2px solid #000;
+            }
+
+            td {
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #000;
+            }
+
+            td img {
+                width: 140px;
+                height: 90px;
+            }
+
+            td a {
+                text-decoration: none;
+                color: red;
+            }
+
+            td a:hover {
+                color: blue;
+            }
+
+            td font {
+                font-family: Arial, sans-serif;
+                display: block;
+            }
+
+            td[bgcolor="red"] {
+                background-color: red;
+            }
+
+            /* Hover effect for rows */
+            tr:hover {
+                background-color: #D3D3D3;
+            }
+
+            td[colspan="2"][rowspan="2"] {
+                width: 140px;
+                height: 90px;
+            }
+
+            td[rowspan="2"] {
+                height: 60px;
+            }
+
+            td[colspan="2"] {
+                width: 120px;
+                height: 60px;
+            }
+
+            td[rowspan="2"]:not([colspan="2"]) {
+                width: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Activity 3: Tables and Hyperlinks</h1>
+            <table>
+                <tr>
+                    <td colspan="2" rowspan="2">
+                        <img src="ronaldo.png" alt="ronaldo">
+                    </td>
+                    <td bgcolor="red"></td>
+                    <td rowspan="2">
+                        <font color="green">Try to be a chill guy and avoid stress!</font>
+                    </td>
+                    <td colspan="2" rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <a href="mailto:rishit.chaudhary2023@vitstudent.ac.in">Link to mail</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="home.html">Link to home.html</a>
+                    </td>
+                    <td colspan="2">
+                        <a href="weeknd.png"><img src="weeknd.png" alt="weeknd"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="red"></td>
+                    <td colspan="2" bgcolor="red"></td>
+                    <td rowspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2" bgcolor="red"></td>
+                    <td rowspan="2">
+                        <font color="red">You will work hard and achieve your goals!</font>
+                    </td>
+                    <td rowspan="2" colspan="2">
+                        <font color="blue">You will become successful in life and get what you deserve, it won't be easy but I'll never give up, no matter what!</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font color="green">You are getting smarter each day!</font>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
